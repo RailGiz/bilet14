@@ -1,4 +1,22 @@
-
+CREATE DATABASE SLAUDatabase;
+CREATE TABLE SLAUTable (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    a DOUBLE,
+    b DOUBLE,
+    c DOUBLE,
+    d DOUBLE,
+    e DOUBLE,
+    f DOUBLE,
+    g DOUBLE,
+    h DOUBLE,
+    i DOUBLE,
+    j DOUBLE,
+    k DOUBLE,
+    l DOUBLE,
+    x1 DOUBLE,
+    x2 DOUBLE,
+    x3 DOUBLE
+);
 CREATE TABLE `SLAUDatabase`.`pages` (`url` VARCHAR(255) NOT NULL ,`name` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL , `secure` BOOLEAN NOT NULL DEFAULT FALSE , `alias` VARCHAR(255) NOT NULL , PRIMARY KEY (`url`)) ENGINE = InnoDB;
 CREATE TABLE `SLAUDatabase`.`users` (`login` VARCHAR(50) NOT NULL , `password` VARCHAR(512) NOT NULL , `name` VARCHAR(100) NOT NULL , PRIMARY KEY (`login`)) ENGINE = InnoDB;
 
