@@ -1,1 +1,9 @@
 
+CREATE TABLE `SLAUDatabase`.`pages` (`url` VARCHAR(255) NOT NULL ,`name` VARCHAR(255) NOT NULL, `title` VARCHAR(255) NOT NULL , `secure` BOOLEAN NOT NULL DEFAULT FALSE , `alias` VARCHAR(255) NOT NULL , PRIMARY KEY (`url`)) ENGINE = InnoDB;
+CREATE TABLE `SLAUDatabase`.`users` (`login` VARCHAR(50) NOT NULL , `password` VARCHAR(512) NOT NULL , `name` VARCHAR(100) NOT NULL , PRIMARY KEY (`login`)) ENGINE = InnoDB;
+
+INSERT INTO `pages`(`url`,`name`, `title`,`secure`,`alias`) VALUES ('/','Главная','Наш супер-сайт!',0,'/index.php');
+INSERT INTO `pages`(`url`,`name`, `title`,`secure`,`alias`) VALUES ('/second.php','Вторая страница','Вторая страница супер-сайта!',0,0);
+INSERT INTO `pages`(`url`,`name`, `title`,`secure`) VALUES ('/secret.php','Кабинет','Личный кабинет пользователя',1);
+
+в алиас поставить галочку NULL
